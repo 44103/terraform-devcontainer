@@ -1,0 +1,26 @@
+{
+  "name": "Terraform",
+  "dockerComposeFile": [
+    "docker-compose.yml"
+  ],
+  "service": "terraform",
+  "workspaceFolder": "/workdir",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.shell.linux": "zsh"
+      },
+      "extensions": [
+        "sleistner.vscode-fileutils",
+        "ms-vscode.makefile-tools",
+        "fabiospampinato.vscode-todo-plus",
+        "shardulm94.trailing-spaces",
+        "patbenatar.advanced-new-file",
+        "mhutchie.git-graph",
+        "esbenp.prettier-vscode",
+        "christian-kohler.path-intellisense",
+        "streetsidesoftware.code-spell-checker"
+      ]
+    }
+  }
+}

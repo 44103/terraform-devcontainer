@@ -1,0 +1,9 @@
+version: "3"
+services:
+  terraform:
+    build: .
+    working_dir: /workdir
+    command: sleep infinity
+    volumes:
+      - ../:/workdir
+      - ~/.zsh_history:/root/.zsh_history
