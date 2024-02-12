@@ -19,6 +19,11 @@ RUN wget -O- https://apt.releases.hashicorp.com/gpg | \
         tee /etc/apt/sources.list.d/hashicorp.list \
     && apt-get update && apt-get -y install terraform
 
+RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" && \
+    unzip awscliv2.zip && \
+    ./aws/install && \
+    rm awscliv2.zip
+
 RUN apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
