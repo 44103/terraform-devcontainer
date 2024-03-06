@@ -23,7 +23,15 @@
         "hediet.vscode-drawio",
         "shd101wyy.markdown-preview-enhanced",
         "hashicorp.terraform"
-      ]
+      ],
+      "recommendations": [
+        "42Crunch.vscode-openapi"
+      ],
+      "[markdown]": {
+        "files.trimTrailingWhitespace": false,
+        "editor.tabSize": 3,
+        "editor.insertSpaces": true
+      }
     }
   }
 }
